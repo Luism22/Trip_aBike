@@ -2,25 +2,22 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Restringe la recolección de monedas para evitar duplicados.
+    private bool collected = false;
 
-    // Update is called once per frame
     void Update()
     {
         transform.Rotate(50 * Time.deltaTime, 0, 0);
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.CompareTag("Player") && !collected) // Verifica que la moneda no haya sido recolectada.
         {
             FindAnyObjectByType<AudioManager>().PlaySound("PickUpCoins");
             PlayerManager.numberOfCoins += 1;
+            collected = true; // Marca la moneda como recolectada para evitar duplicados.
             Destroy(gameObject);
-
         }
     }
 }
