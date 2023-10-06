@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "544267784767",
+    "firebase_url": "https://trip-abike-default-rtdb.firebaseio.com",
+    "project_id": "trip-abike",
+    "storage_bucket": "trip-abike.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544267784767:android:784539dc8bb82a7e681e8a",
+        "android_client_info": {
+          "package_name": "com.UTB.Trip_aBike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544267784767-l6h6feer842rc949351tp2jplee3f8bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_nL0QvGj4mbZNG1lpjsSikWB-2iyHQ14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544267784767-2lqes64tsccei3ngsuhrj06bdkuabk06.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "544267784767-0smr42qdnb230k5j37qnakuh8c5n15hu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tripAbike"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544267784767:android:36fbd3bb66a7f31e681e8a",
+        "android_client_info": {
+          "package_name": "com.example.trip_abike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544267784767-k7sdtq27u7i186udbpjdfs5hkg5fg6bm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trip_abike",
+            "certificate_hash": "c8f3190a0f7bf502378c4ef0d97044b4d1216068"
+          }
+        },
+        {
+          "client_id": "544267784767-l6h6feer842rc949351tp2jplee3f8bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_nL0QvGj4mbZNG1lpjsSikWB-2iyHQ14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544267784767-2lqes64tsccei3ngsuhrj06bdkuabk06.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "544267784767-0smr42qdnb230k5j37qnakuh8c5n15hu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tripAbike"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
