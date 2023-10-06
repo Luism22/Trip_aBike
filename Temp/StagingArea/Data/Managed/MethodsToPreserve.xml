@@ -1,0 +1,19 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AnswerButtons">
+			<method name="AnswerA"/>
+			<method name="AnswerB"/>
+			<method name="AnswerC"/>
+			<method name="AnswerD"/>
+		</type>
+		<type fullname="MainMenu">
+			<method name="PlayGame"/>
+			<method name="QuitGame"/>
+		</type>
+		<type fullname="NewBehaviourScript">
+			<method name="QuitGame"/>
+			<method name="QuitGame"/>
+			<method name="ReplayGame"/>
+		</type>
+	</assembly>
+</linker>

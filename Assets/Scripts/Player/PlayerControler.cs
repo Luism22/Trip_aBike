@@ -12,11 +12,16 @@ public class PlayerControler : MonoBehaviour
     public float laneDistance = 4;//the distance between two lanes
 
     public float jumpForce;
-    public float Gravity = -20;
+    public float Gravity = -50;
+
+    private float startAccel; // Aceleración inicial del giroscopio
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+
+        Input.gyro.enabled = true; // Habilitar el giroscopio
+        startAccel = Input.acceleration.x; // Obtener la aceleración inicial
     }
 
     // Update is called once per frame
@@ -38,6 +43,20 @@ public class PlayerControler : MonoBehaviour
         else
         {
             direction.y += Gravity * Time.deltaTime;
+        }
+        // Usar el giroscopio para cambiar de carril
+        float currentAccel = Input.acceleration.x;
+        if (Mathf.Abs(currentAccel - startAccel) > 0.3f)
+        {
+            if (currentAccel > startAccel)
+            {
+                MoveLaneRight();
+            }
+            else
+            {
+                MoveLaneLeft();
+            }
+            startAccel = currentAccel;
         }
 
         //Gather the inputs on which lane we should be
@@ -79,6 +98,19 @@ public class PlayerControler : MonoBehaviour
         controller.Move(direction * Time.fixedDeltaTime);
     }
 
+    private void MoveLaneLeft()
+    {
+        desiredLane--;
+        if (desiredLane < 0)
+            desiredLane = 0;
+    }
+
+    private void MoveLaneRight()
+    {
+        desiredLane++;
+        if (desiredLane > 2)
+            desiredLane = 2;
+    }
     private void Jump()
     {
         direction.y = jumpForce;

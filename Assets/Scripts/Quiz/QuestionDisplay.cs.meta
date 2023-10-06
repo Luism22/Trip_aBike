@@ -3,7 +3,12 @@ guid: 18a6873dc6956a54281b91c171bd2428
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - screenQuestion: {instanceID: 0}
+  - answerA: {instanceID: 0}
+  - answerB: {instanceID: 0}
+  - answerC: {instanceID: 0}
+  - answerD: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

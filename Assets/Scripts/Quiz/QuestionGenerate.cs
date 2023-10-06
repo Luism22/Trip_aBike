@@ -9,7 +9,7 @@ public class QuestionGenerate : MonoBehaviour
     public int questionNumber;
 
     private List<int> usedQuestions = new List<int>();
-    private int totalQuestions = 19; // Número total de preguntas disponibles.
+    private int totalQuestions = 10; // Número total de preguntas disponibles.
 
     // Update is called once per frame
     void Update()
@@ -28,183 +28,102 @@ public class QuestionGenerate : MonoBehaviour
             do
             {
                 questionNumber = Random.Range(1, totalQuestions + 1);
-            } while (usedQuestions.Contains(questionNumber));
+            }
+            while (usedQuestions.Contains(questionNumber));
 
             usedQuestions.Add(questionNumber);
 
             // Asigna las preguntas y respuestas según el número de pregunta.
             if (questionNumber == 1)
             {
-                QuestionDisplay.newQuestion = "how are you?";
-                QuestionDisplay.newA = "A. mario";
-                QuestionDisplay.newB = "B. luis";
-                QuestionDisplay.newC = "C. carlos";
-                QuestionDisplay.newD = "D. juan";
-                actualAnswer = "A";
+                QuestionDisplay.newQuestion = "Question 1: What is the correct past tense of the verb 'go'?";
+                QuestionDisplay.newA = "A. goed";
+                QuestionDisplay.newB = "B. gone";
+                QuestionDisplay.newC = "C. went";
+                QuestionDisplay.newD = "D. goes";
+                actualAnswer = "C";
             }
             else if (questionNumber == 2)
             {
-                QuestionDisplay.newQuestion = "where are you from?";
-                QuestionDisplay.newA = "A. canada";
-                QuestionDisplay.newB = "B. bogota";
-                QuestionDisplay.newC = "C. cundinamarca";
-                QuestionDisplay.newD = "D. cartagena";
-                actualAnswer = "D";
+                QuestionDisplay.newQuestion = "Question 2: Which of the following is a synonym for 'happy'?";
+                QuestionDisplay.newA = "A. sad";
+                QuestionDisplay.newB = "B. joyful";
+                QuestionDisplay.newC = "C. angry";
+                QuestionDisplay.newD = "D. upset";
+                actualAnswer = "B";
             }
             else if (questionNumber == 3)
             {
-                QuestionDisplay.newQuestion = "where is japan?";
-                QuestionDisplay.newA = "A. africa";
-                QuestionDisplay.newB = "B. asia";
-                QuestionDisplay.newC = "C. america";
-                QuestionDisplay.newD = "D. antatica";
-                actualAnswer = "B";
+                QuestionDisplay.newQuestion = "Question 3: What is the plural form of 'child'?";
+                QuestionDisplay.newA = "A. childs";
+                QuestionDisplay.newB = "B. child";
+                QuestionDisplay.newC = "C. childes";
+                QuestionDisplay.newD = "D. children";
+                actualAnswer = "D";
             }
             else if (questionNumber == 4)
             {
-                QuestionDisplay.newQuestion = "how old are you?";
-                QuestionDisplay.newA = "A. 22";
-                QuestionDisplay.newB = "B. 34";
-                QuestionDisplay.newC = "C. 23";
-                QuestionDisplay.newD = "D. 41";
+                QuestionDisplay.newQuestion = "Question 4: Which of the following sentences is correct?";
+                QuestionDisplay.newA = "A. She don’t like apples.";
+                QuestionDisplay.newB = "B. She doesn’t likes apples.";
+                QuestionDisplay.newC = "C. She doesn’t like apples.";
+                QuestionDisplay.newD = "D. She don’t likes apples.";
                 actualAnswer = "C";
             }
             else if (questionNumber == 5)
             {
-                QuestionDisplay.newQuestion = "Question 5: What is the largest planet in our solar system?";
-                QuestionDisplay.newA = "A. Earth";
-                QuestionDisplay.newB = "B. Mars";
-                QuestionDisplay.newC = "C. Jupiter";
-                QuestionDisplay.newD = "D. Saturn";
-                actualAnswer = "C";
+                QuestionDisplay.newQuestion = "Question 5: What is the superlative form of 'good'?";
+                QuestionDisplay.newA = "A. gooder";
+                QuestionDisplay.newB = "B. goodest";
+                QuestionDisplay.newC = "C. better";
+                QuestionDisplay.newD = "D. best";
+                actualAnswer = "D";
             }
             else if (questionNumber == 6)
             {
-                QuestionDisplay.newQuestion = "Question 6: Who painted the Mona Lisa?";
-                QuestionDisplay.newA = "A. Vincent van Gogh";
-                QuestionDisplay.newB = "B. Pablo Picasso";
-                QuestionDisplay.newC = "C. Leonardo da Vinci";
-                QuestionDisplay.newD = "D. Michelangelo";
-                actualAnswer = "C";
+                QuestionDisplay.newQuestion = "Question 6: Which of the following words is an adverb?";
+                QuestionDisplay.newA = "A. quickly";
+                QuestionDisplay.newB = "B. quick";
+                QuestionDisplay.newC = "C. quickest";
+                QuestionDisplay.newD = "D. quicker";
+                actualAnswer = "A";
             }
             else if (questionNumber == 7)
             {
-                QuestionDisplay.newQuestion = "Question 7: What is the chemical symbol for gold?";
-                QuestionDisplay.newA = "A. Go";
-                QuestionDisplay.newB = "B. Au";
-                QuestionDisplay.newC = "C. Ag";
-                QuestionDisplay.newD = "D. Gd";
+                QuestionDisplay.newQuestion = "Question 7: What is the correct contraction of 'I am'?";
+                QuestionDisplay.newA = "A. Im";
+                QuestionDisplay.newB = "B. I’m";
+                QuestionDisplay.newC = "C. Am";
+                QuestionDisplay.newD = "D. Iam";
                 actualAnswer = "B";
             }
             else if (questionNumber == 8)
             {
-                QuestionDisplay.newQuestion = "Question 8: Which gas do plants absorb from the atmosphere?";
-                QuestionDisplay.newA = "A. Oxygen";
-                QuestionDisplay.newB = "B. Carbon dioxide";
-                QuestionDisplay.newC = "C. Nitrogen";
-                QuestionDisplay.newD = "D. Hydrogen";
-                actualAnswer = "B";
+                QuestionDisplay.newQuestion = "Question 8: Which of the following sentences is in the future tense?";
+                QuestionDisplay.newA = "A. I ate dinner.";
+                QuestionDisplay.newB = "B. I eat dinner.";
+                QuestionDisplay.newC = "C. I will eat dinner.";
+                QuestionDisplay.newD = "D. I eating dinner.";
+                actualAnswer = "C";
             }
             else if (questionNumber == 9)
             {
-                QuestionDisplay.newQuestion = "Question 9: What is the capital of Australia?";
-                QuestionDisplay.newA = "A. Sydney";
-                QuestionDisplay.newB = "B. Melbourne";
-                QuestionDisplay.newC = "C. Canberra";
-                QuestionDisplay.newD = "D. Perth";
-                actualAnswer = "C";
+                QuestionDisplay.newQuestion = "Question 9: What is the past participle of 'see'?";
+                QuestionDisplay.newA = "A. saw";
+                QuestionDisplay.newB = "B. seen";
+                QuestionDisplay.newC = "C. see";
+                QuestionDisplay.newD = "D. sees";
+                actualAnswer = "B";
             }
             else if (questionNumber == 10)
             {
-                QuestionDisplay.newQuestion = "Question 10: What is the capital of Japan?";
-                QuestionDisplay.newA = "A. Beijing";
-                QuestionDisplay.newB = "B. Seoul";
-                QuestionDisplay.newC = "C. Tokyo";
-                QuestionDisplay.newD = "D. Bangkok";
+                QuestionDisplay.newQuestion = "Question 10: Which of the following is a proper noun?";
+                QuestionDisplay.newA = "A. city";
+                QuestionDisplay.newB = "B. dog";
+                QuestionDisplay.newC = "C. John";
+                QuestionDisplay.newD = "D. book";
                 actualAnswer = "C";
             }
-            else if (questionNumber == 11)
-            {
-                QuestionDisplay.newQuestion = "Question 11: Who is the author of 'To Kill a Mockingbird'?";
-                QuestionDisplay.newA = "A. Ernest Hemingway";
-                QuestionDisplay.newB = "B. J.K. Rowling";
-                QuestionDisplay.newC = "C. Harper Lee";
-                QuestionDisplay.newD = "D. George Orwell";
-                actualAnswer = "C";
-            }
-            else if (questionNumber == 12)
-            {
-                QuestionDisplay.newQuestion = "Question 12: What is the largest desert in the world?";
-                QuestionDisplay.newA = "A. Sahara Desert";
-                QuestionDisplay.newB = "B. Gobi Desert";
-                QuestionDisplay.newC = "C. Antarctic Desert";
-                QuestionDisplay.newD = "D. Atacama Desert";
-                actualAnswer = "A";
-            }
-            else if (questionNumber == 13)
-            {
-                QuestionDisplay.newQuestion = "Question 13: Who was the first woman to fly solo across the Atlantic Ocean?";
-                QuestionDisplay.newA = "A. Amelia Earhart";
-                QuestionDisplay.newB = "B. Marie Curie";
-                QuestionDisplay.newC = "C. Rosa Parks";
-                QuestionDisplay.newD = "D. Sacagawea";
-                actualAnswer = "A";
-            }
-            else if (questionNumber == 14)
-            {
-                QuestionDisplay.newQuestion = "Question 14: Which planet is known as the 'Evening Star' or the 'Morning Star'?";
-                QuestionDisplay.newA = "A. Venus";
-                QuestionDisplay.newB = "B. Mercury";
-                QuestionDisplay.newC = "C. Mars";
-                QuestionDisplay.newD = "D. Neptune";
-                actualAnswer = "A";
-            }
-            else if (questionNumber == 15)
-            {
-                QuestionDisplay.newQuestion = "Question 15: Who is the author of '1984'?";
-                QuestionDisplay.newA = "A. F. Scott Fitzgerald";
-                QuestionDisplay.newB = "B. George Orwell";
-                QuestionDisplay.newC = "C. Charles Dickens";
-                QuestionDisplay.newD = "D. Jane Austen";
-                actualAnswer = "B";
-            }
-            else if (questionNumber == 16)
-            {
-                QuestionDisplay.newQuestion = "Question 16: What is the world's largest ocean?";
-                QuestionDisplay.newA = "A. Atlantic Ocean";
-                QuestionDisplay.newB = "B. Indian Ocean";
-                QuestionDisplay.newC = "C. Arctic Ocean";
-                QuestionDisplay.newD = "D. Pacific Ocean";
-                actualAnswer = "D";
-            }
-            else if (questionNumber == 17)
-            {
-                QuestionDisplay.newQuestion = "Question 17: Who painted the 'Starry Night'?";
-                QuestionDisplay.newA = "A. Vincent van Gogh";
-                QuestionDisplay.newB = "B. Pablo Picasso";
-                QuestionDisplay.newC = "C. Leonardo da Vinci";
-                QuestionDisplay.newD = "D. Michelangelo";
-                actualAnswer = "A";
-            }
-            else if (questionNumber == 18)
-            {
-                QuestionDisplay.newQuestion = "Question 18: Which gas makes up the majority of Earth's atmosphere?";
-                QuestionDisplay.newA = "A. Oxygen";
-                QuestionDisplay.newB = "B. Carbon dioxide";
-                QuestionDisplay.newC = "C. Nitrogen";
-                QuestionDisplay.newD = "D. Hydrogen";
-                actualAnswer = "C";
-            }
-            else if (questionNumber == 19)
-            {
-                QuestionDisplay.newQuestion = "Question 19: What is the currency of Brazil?";
-                QuestionDisplay.newA = "A. Dollar";
-                QuestionDisplay.newB = "B. Euro";
-                QuestionDisplay.newC = "C. Real";
-                QuestionDisplay.newD = "D. Peso";
-                actualAnswer = "C";
-            }
-
 
 
             QuestionDisplay.pleaseUpdate = false;
