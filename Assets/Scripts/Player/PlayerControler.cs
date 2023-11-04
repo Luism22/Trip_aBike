@@ -46,7 +46,7 @@ public class PlayerControler : MonoBehaviour
         }
         // Usar el giroscopio para cambiar de carril
         float currentAccel = Input.acceleration.x;
-        if (Mathf.Abs(currentAccel - startAccel) > 0.3f)
+        if (Mathf.Abs(currentAccel - startAccel) > 0.27f)
         {
             if (currentAccel > startAccel)
             {

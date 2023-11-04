@@ -55,7 +55,7 @@ public class AnswerButtons : MonoBehaviour
     }
     public void AnswerA()
     {
-        if (QuestionGenerate.actualAnswer == "A")
+        if (QuestionGenerateEasy.actualAnswer == "A")
         {
             answerAbackGreen.SetActive(true);
             answerAbackBlue.SetActive(false);
@@ -78,7 +78,7 @@ public class AnswerButtons : MonoBehaviour
     }
     public void AnswerB()
     {
-        if (QuestionGenerate.actualAnswer == "B")
+        if (QuestionGenerateEasy.actualAnswer == "B")
         {
             answerBbackGreen.SetActive(true);
             answerBbackBlue.SetActive(false);
@@ -100,7 +100,7 @@ public class AnswerButtons : MonoBehaviour
     }
     public void AnswerC()
     {
-        if (QuestionGenerate.actualAnswer == "C")
+        if (QuestionGenerateEasy.actualAnswer == "C")
         {
             answerCbackGreen.SetActive(true);
             answerCbackBlue.SetActive(false);
@@ -122,7 +122,7 @@ public class AnswerButtons : MonoBehaviour
     }
     public void AnswerD()
     {
-        if (QuestionGenerate.actualAnswer == "D")
+        if (QuestionGenerateEasy.actualAnswer == "D")
         {
             answerDbackGreen.SetActive(true);
             answerDbackBlue.SetActive(false);
@@ -172,6 +172,6 @@ public class AnswerButtons : MonoBehaviour
         answerC.GetComponent<Button>().enabled = true;
         answerD.GetComponent<Button>().enabled = true;
 
-        QuestionGenerate.displayingQuestion = false;
+        QuestionGenerateEasy.displayingQuestion = false;
     }
 }

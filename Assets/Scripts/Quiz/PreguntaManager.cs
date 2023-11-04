@@ -10,7 +10,7 @@ public class PreguntaManager : MonoBehaviour
     private void Start()
     {
         // Llama a la función "MostrarPregunta" cada 60 segundos, comenzando después de 10 segundos de espera.
-        InvokeRepeating("MostrarPregunta", 10f, 10f);
+        InvokeRepeating("MostrarPregunta", 10f, 12f);
     }
 
     private void MostrarPregunta()
@@ -20,7 +20,7 @@ public class PreguntaManager : MonoBehaviour
             // Activa el panel de la pregunta.
             preguntaPanel.SetActive(true);
 
-            // Después de 10 segundos, desactiva el panel.
+            // Después de 5 segundos, desactiva el panel.
             Invoke("OcultarPregunta", 5f);
 
             panelActivo = true; // Marca el panel como activo.
